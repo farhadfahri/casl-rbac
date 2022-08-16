@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rbac:
+    image: postgres:12.2
+    restart: always
+    ports:
+      - "6161:5432"
+    volumes:
+      -  ./data:/var/lib/rbac/data
+    environment: 
+      POSTGRES_DB: rbac
+      POSTGRES_USER: rbacuser
+      POSTGRES_PASSWORD: docker
+
