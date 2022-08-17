@@ -4,10 +4,10 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { RolesModule } from './roles/roles.module';
 import { PermissionsModule } from './permissions/permissions.module';
-import { ObjectsModule } from './objects/objects.module';
+import { ResourcesModule } from './resources/resources.module';
 
 @Module({
-  imports: [UsersModule, RolesModule, PermissionsModule, ObjectsModule],
+  imports: [UsersModule, RolesModule, PermissionsModule, ResourcesModule],
   controllers: [AppController],
   providers: [AppService],
 })
